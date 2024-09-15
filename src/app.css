@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+	font-family: 'SUSE', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'],
+select,
+textarea {
+	@apply border rounded p-2;
+}
+
+input[type='submit'],
+.primary-button {
+	@apply bg-teal-800 text-white p-4 rounded-lg mt-4;
+}
+
+.primary {
+	@apply text-teal-800;
+}
+a {
+	@apply text-blue-500 hover:underline;
+}
+
+li a {
+	@apply h-8 hover:bg-zinc-200 flex items-center justify-center;
+}
+
+table {
+	@apply table-auto w-full rounded border;
+}
+
+table th {
+	@apply text-left border-b p-2;
+}
+
+table td {
+	@apply text-left border-b p-2;
+}
+
+.form-container {
+	@apply flex items-center justify-center h-screen;
+}
+
+.content-form {
+	@apply flex flex-col gap-2 w-1/2 shadow border rounded-lg p-4;
+}
+
+.error {
+	@apply bg-red-200 text-red-500 p-4 text-center rounded-lg mt-4;
+}
